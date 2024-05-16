@@ -1,0 +1,382 @@
+::before,
+::after * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-nav: Poppins;
+  --fw-nav: 400;
+  --fs-nav: 1.25rem;
+  --fc-nav: #c0c0c0;
+
+  --fw-nav-signIn: 600;
+  --fs-nav-signIn: 1.125rem;
+  --fc-nav-signIn: #ff5034;
+
+  --fw-heading: 500;
+  --fs-heading: 3.6rem;
+
+  --fc-cta: #ff5034;
+  --fw-cta: 500;
+  --fs-cta: 1.25rem;
+
+  --fw-chef: 500;
+  --fs-chef: 1.125rem;
+
+  --fw-article: 400;
+  --fs-article: 1.7rem;
+
+  --fw-subscribe: 500;
+  --fs-subscribe: 2rem;
+
+  --ff-p-footer: Inter;
+  --fw-p-footer: 400;
+  --fs-p-footer: 1rem;
+
+  --fs-s-footer: 1.25rem;
+
+  --fs-f-footer: 1rem;
+  --fw-s-footer: 300;
+  --fc-s-footer: #000000;
+
+  --primary-color: #ff5034;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #020d19;
+}
+
+img {
+  width: 50%;
+}
+
+.container {
+  margin: 1px auto;
+  width: 90%;
+  /* border: 1px solid red; */
+  max-width: 76.9em;
+}
+
+a .logo {
+  min-width: 50%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.primaryNav {
+  margin: 0px auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--fc-nav);
+  font-size: var(--fs-nav);
+}
+
+.cta_signIn {
+  border: 1px solid var(--fc-nav-signIn);
+  padding: 0.5rem 1em;
+  border-radius: 25px;
+  color: #ff5034;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__container {
+  margin: 40px auto;
+  display: flex;
+}
+
+h1 {
+  font-size: 4.3rem;
+  font-weight: 500;
+}
+
+h1 + p {
+  font-size: 1.5rem;
+}
+
+.main__content {
+  align-self: center;
+}
+
+.getStared,
+.callToAction {
+  background-color: #ff5034;
+  padding: 0.6em 1.5em;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.callToAction {
+  border-radius: 20px;
+}
+
+.band {
+  max-width: 15%;
+  max-height: 118.14px;
+}
+
+.brands_container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.order_creation {
+  display: flex;
+}
+
+.heading {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-heading);
+}
+
+.heading + p {
+  font-size: 1.875rem;
+}
+
+.burger-with-fries-content p + p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-with-fries-content {
+  align-self: center;
+}
+
+.best__seller-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.burgers {
+  border: 1px solid #ffffff;
+  width: 100%;
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+.burger__details {
+  text-align: left;
+  width: 80%;
+  margin-bottom: 15px;
+  margin-left: 55px;
+}
+
+.burger__details p {
+  margin: 0px;
+}
+
+p.price {
+  font-size: 1.875rem;
+}
+
+a.cta {
+  border: 2px solid var(--fc-cta);
+  color: var(--fc-cta);
+  border-radius: 20px;
+  padding: 0.2em 0.7em;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.burger {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.popular-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.9em;
+}
+
+.dc-zinger,
+.dc-bacon-fish {
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+  gap: 15px;
+}
+
+.dc-zinger__content p,
+.dc-bacon-fish__content p {
+  margin: 0.5em 0em;
+  font-size: 1.625rem;
+}
+
+.section__chef p {
+  margin-top: 250px;
+  text-align: center;
+}
+.chef {
+  display: flex;
+  justify-content: space-between;
+}
+.chef__image {
+  width: 100%;
+}
+
+/* need to woek on the space betwwen the picture and p tag */
+
+.chef_image-container {
+  margin-bottom: 0px;
+}
+
+.chef__details p {
+  margin: 0px auto;
+
+  padding: 1rem;
+  background-color: #ff5034;
+}
+
+/* .Chef-Isabella{
+border:none;
+ background-image: url(/image/Chef\ Isabella\ Chang.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+} */
+
+article p.heading {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.article__content {
+  text-align: center;
+  width: 40%;
+}
+
+.article__content p:nth-child(1) {
+  margin: 0px;
+  font-size: 9.74rem;
+  line-height: 0.1;
+}
+
+.article__content p:nth-child(2) {
+  font-size: var(--fs-article);
+}
+.article__content p:nth-child(2) + p {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.section__subscription {
+  background-image: url(/image/Subscrition\ background\ image.png);
+  background-size: cover;
+  /* background-position: center; */
+}
+.subscription {
+  text-align: center;
+}
+
+.subscription p:nth-child(1) {
+  font-size: 2rem;
+  margin-top: 180px;
+  padding-top: 3em;
+}
+.subscription p:nth-child(2) {
+  font-size: 1.25rem;
+}
+
+.subscription form {
+  padding: 5.5em 0em;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 0.5em;
+  width: 400px;
+  border-radius: 7px;
+}
+
+.subscription__form button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--primary-color);
+}
+.footer__content-1 {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5em;
+}
+.footer__heading {
+  font-size: 2rem;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  width: 100%;
+}
+
+.container-2 a {
+  display: block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.4em;
+}
+
+.container-1 p:nth-child(2) {
+  font-size: 1rem;
+}
+
+.footer__form {
+  margin-top: 32px;
+}
+
+.footer__form input {
+  margin: 8px 0px;
+}
+
+.icon a {
+  margin-right: 2em;
+}
+
+.footer__content-2-content-2 p {
+  display: inline-block;
+}
+
+.footer__content-2-content-2 p:nth-child(1) {
+  margin-right: 3em;
+}

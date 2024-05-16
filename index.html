@@ -3,58 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="img/png"  href="/image/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Burger|Laiba Farooq</title>
   </head>
   <body>
 
     <header>
-        <img src="/image/apple-touch-icon.png" alt="Burger logo">
+        <div class="header__container container ">
+            <a href="#">
+        <img src="/image/apple-touch-icon.png" class="logo" alt="Burger logo"></a>
           <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Feature</a></li>
-                <li><a href="">Contant</a></li>
-                <li class="callToAction"><a href="">Sign In</a></li>
+            <ul class="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
+            <ul class="secondaryNav">
+                <li><a href="#" class="cta_signIn">Sign In</a></li>
+                </ul>
           </nav>
+        </div>
     </header>
 
     <main>
-        <div class="main__container">
+        <div class="main__container container">
             <div class="main__content">
                 <h1>Bite into Flavorful Delights</h1>
                 <p>Savor the Juicy Goodness, Crafted with Passion. Indulge in Burger Bliss Beyond Compare.</p>
 
-                <p class="links getStared">Get Started</p>
+                <a class="links getStared">Get Started</a>
             </div>
 
-            <img src="/image/buger main image.jpg" alt="burger main image">
+            <img src="/image/buger main image.jpg" class="mainImage" alt="burger main image">
 
         </div>
 
         <section>
-            <div class="section__container brands">
+            <div class="section__container brands container">
                 <div class="brands_container">
-                    <img src="/image/mos_burger-brandlogo.png" alt="mos burger logo">
-                    <img src="/image/Orange Blossom.png" alt="Orange Blossom logo">
-                    <img src="/image/In-N-Out-Burger-Logo.png" alt="In-N-Out-Burger Logo">
-                    <img src="/image/burger-king-logo.png" alt="burger king logo">
-                    <img src="/image/McDonalds-Logo.png" alt="McDonalds Logo">
+                    <img src="/image/mos_burger-brandlogo.png" class="band"  alt="mos burger logo">
+                    <img src="/image/Orange Blossom.png"  class="band" alt="Orange Blossom logo">
+                    <img src="/image/In-N-Out-Burger-Logo.png" class="band"  alt="In-N-Out-Burger Logo">
+                    <img src="/image/burger-king-logo.png"  class="band" alt="burger king logo">
+                    <img src="/image/McDonalds-Logo.png"  class="band" alt="McDonalds Logo">
                 </div>
 
             </div>
         </section>
 
         <section>
-            <div class="section__container order_creation">
+            <div class="section__container order_creation container">
                 <img src="/image/burger with fries.png" class="burger-with-fries" alt="burger with friespicture">
 
                 <div class="burger-with-fries-content">
                     <p class="heading">Delicious Burger Creations Await You</p>
-                    <p>Indulge in a symphony of savory delights as our artisanal burgers redefine culinary excellence. From succulent patties to gourmet toppings, each bite is a journey through a world of flavors. </p>
+                    <p>Indulge in a symphony of savory delights as our artisanal burgers redefine culinary excellence.<br> From succulent patties to gourmet toppings, each bite is a journey through a world of flavors. </p>
 
-                    <p class="callToAction">Order Now</p>
+                    <a class="callToAction">Order Now</a>
                 </div>
 
             </div>
@@ -62,128 +72,188 @@
         </section>
 
         <section>
-            <div class="best__seller">
+            <div class="best__seller container">
+                <div class="row">
                 <p class="heading">Our Best Seller</p>
-                <p>See all</p>
-                <div>
-                    <img src="/image/zinger_burger.png" alt="zinger burger image">
+                <p>See all <span>></span></p>
+            </div>
+                <div class="best__seller-content">
+                <div class="burgers">
+                    <img src="/image/zinger_burger.png" class="zinger burger" alt="zinger burger image">
+                    <div class="burger__details">
                     <p>Zinger Burger</p>
                     <p class="price">$20</p>
-                    <span></span>
-                    <p class="cta">Add to cart</p>
+                    <span><i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    </div>
+                    <a class="cta">Add to cart</a>
                 </div>
-                <div>
-                    <img src="/image/chicken-Burger.png" alt="chicken Burger image">
+                <div class="burgers">
+                    <img src="/image/chicken-Burger.png" class="chicken burger" alt="chicken Burger image">
+                    <div class="burger__details">
                     <p>Chicken Burger</p>
                     <p class="price">$24</p>
-                    <span></span>
-                    <p class="cta">Add to cart</p>
+                    <span><i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i></span>
+                    </div>
+                    <a class="cta">Add to cart</a>
                 </div>
-                <div>
-                    <img src="/image/fish-burger.png" alt="fish burger image">
-                    <p>Chicken Burger</p>
+                <div class="burgers">
+                    <img src="/image/fish-burger.png" class="fish burger" alt="fish burger image">
+                    <div class="burger__details">
+                    <p>Fish Burger</p>
                     <p class="price">$30</p>
-                    <span></span>
-                    <p class="cta">Add to cart</p>
+                    <span><i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i></span>
+                    </div>
+                    <a class="cta">Add to cart</a>
                 </div>
-                <div>
-                    <img src="/image/beef-burger.png" alt="beef burger image">
-                    <p>Chicken Burger</p>
+                <div class="burgers">
+                    <img src="/image/beef-burger.png" class="beef burger" alt="beef burger image">
+                    <div class="burger__details">
+                    <p>Beef Burger</p>
                     <p class="price">$28</p>
-                    <span></span>
-                    <p class="cta">Add to cart</p>
+                    <span><i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i></span>
                 </div>
+                    <a class="cta">Add to cart</a>
+                </div>
+            </div>
             </div>
         </section>
 
         <section>
-            <p>Our Popular Menu</p>
+            <div class="popular__menu-container container">
+                <div class="row">
+            <p class="heading">Our Popular Menu</p>
             <p>See all</p>
-            <div class="popular-menu">
+        </div>
+            <div class="popular-menu ">
                 <div class="dc-zinger">
                     <img src="/image/Double Cheese Zinger Burger.png" alt="Double Cheese Zinger Burger image">
+                    <div class="dc-zinger__content">
                     <p>Double Cheese Zinger Burger</p>
                     <p class="price">$28</p>
-                    <span></span>
-                    <p class="cta">Add to cart</p>
+                    <div><i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i></div>
+                    <a class="cta">Add to cart</a>
+                </div>
                 </div>
 
                 <div class="dc-bacon-fish">
-                    <img src="/image/double-cheesy-bacon.png" alt="double cheesy bacon Burger image">
+                    <img src="/image/double-cheesy-bacon.png" alt="double cheesy bacon Fish Burger image">
+                    <div class="dc-bacon-fish__content" >
                     <p>Double Cheese Zinger Burger</p>
                     <p class="price">$31</p>
-                    <span></span>
-                    <p class="cta">Add to cart</p>
+                    <div><i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i></div>
+                    <a class="cta">Add to cart</a>
                 </div>
-
+                </div>
+            </div>
             </div>
         </section>
         
 
         <section>
-
-            <div class="section__chef chef">
-                <div>
-                    <img src="/image/Chef Gabriella Russo.png" alt="Chef Gabriella Russo image">
+<div class="section__chef container">
+    <p class="heading">Our Best Chef</p>
+            <div class="chef">
+                <div class="chef__details">
+                    <div class="chef_image-container">    
+                    <img src="/image/Chef Gabriella Russo.png" class="chef__image" alt="Chef Gabriella Russo image">
+                    </div>
                     <p>Chef Gabriella Russo</p>
                 </div>
-                <div>
-                    <img src="/image/Chef Malik Thompson.png" alt="Chef Malik Thompson image">
+                <div class="chef__details">
+                    <div class="chef_image-container">    
+                    <img src="/image/Chef Malik Thompson.png" class="chef__image" alt="Chef Malik Thompson image">
+                    </div>
                     <p>Chef Malik Thompson</p>
                 </div>
-                <div>
-                    <img src="/image/Chef Isabella Chang.png" alt="Chef Isabella Chang image">
+                <div class="chef__details">
+                    <div class="chef_image-container">    
+                    <img src="/image/Chef Isabella Chang.png" class="chef__image" alt="Chef Isabella Chang image">
                     <p>Chef Isabella Chang</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="/image/Chef Xavier Rodriguez.png" alt="Chef Xavier Rodriguez image">
+                <div class="chef__details">
+                    <div class="chef_image-container">    
+                    <img src="/image/Chef Xavier Rodriguez.png" class="chef__image" alt="Chef Xavier Rodriguez image">
+                    </div>
                     <p>Chef Xavier Rodriguez</p>
                 </div>
             </div>
-
+        </div>
         </section>
 
         <article>
+           <div class="article__container container">
             <p class="heading">See Why Our Clients Love Us</p>
-            <div>
+            <div class="row">
                 <img src="/image/review imge.png" alt="Review Image">
-                <div class="article content">
+                <div class="article__content">
+                    <p>"</p>
                  <p>
-                    "
+            
                     "I can't get enough of the mouthwatering burgers from this website! The flavors are incredible, and the quality is top-notch. Definitely my go-to place for a burger fix!"
                  </p>
                  <p>Sarah Thompson</p>
                 </div>
             </div>
+        </div>
         </article>
 
         <section>
-            <div class="subscribtion">
+            <div class="section__subscription  container">
+            <div class="subscription">
                 <p>Subscribe to Stay in the Loop</p>
                 <p>Get the Latest News, Trends, and Special Promotions Direct to Your Inbox.</p>
 
                 <form action="">
+                    <div class="subscription__form">
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email:"> <button>Subscribe</button>
-
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email:"> <button type="submit">SUBSCRIBE</button>
+                </div>
                 </form>
-
+            </div>
             </div>
         </section>
 </main>
 
 <footer>
-    <div class=" container-1">
-    <p>Burger</p>
+    <div class="footer__container container">
+        <div class="footer__content-1">
+        
+    <div class="container-1">
+    <p class="footer__heading">Burger</p>
     <p>Indulge in burger perfection at our haven where every bite tells a tale of flavor and quality, crafted with passion and served with a side of delightful moments.</p>
     <div class="icon">
-        twtter
-        instagram
-        facebook
+        <a href="https://twitter.com/rockfrompebbles"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a>
+        <a href="https://web.facebook.com/Icetslim"><i class="fa-brands fa-facebook-f fa-lg" style="color: #fcfcfd;"></i></a>
+        <a href="https://www.instagram.com/3rdiraven/"><i class="fa-brands fa-instagram fa-lg" style="color: #fafcff;"></i></a>
     </div>
-
+</div>
     <div class=" container-2">
-        <p>Useful Links</p>
+        <p class="footer__heading">Useful Links</p>
 
 <a href="">Home</a>
 <a href="">Menu</a>
@@ -195,19 +265,29 @@
 <div class=" container-3">
 
 <form action="">
+    <div class="footer__form">
                     <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="Email: info@burgerwebsite.com"> 
                     <label for="phonenumber"></label>
                     <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="Phone: (555) 123-4567">
+                </div>
                 </form>
 
-<p>&copy;2024 Burger Website. All rights reserved </p>
+            </div>
+        </div>
+            <div class="footer__content-2 row">
+                <div class="footer__content-2-content-1">
+                <p>&copy;2024 RockfromPebbles. All rights reserved </p>
+            </div>
+            <div class="footer__content-2-content-2">
 <p>Privacy Policy</p>
 <p>Terms of use</p>
+</div>
+</div>
 </footer>
 
 
 
-       
+<script src="https://kit.fontawesome.com/869682952a.js" crossorigin="anonymous"></script>
   </body>
 </html>
